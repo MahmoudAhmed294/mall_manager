@@ -1,0 +1,61 @@
+body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .loader {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='211' height='211' viewBox='0 0 211 211'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D.b%7Bclip-path:url(%23a);%7D.c,.d%7Bfill:%230068b3;%7D.c%7Bfill-rule:evenodd;%7D%3C/style%3E%3CclipPath id='a'%3E%3Crect class='a' width='211' height='211' transform='translate(958 191)'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg class='b' transform='translate(-958 -191)'%3E%3Cg transform='translate(957.611 189.618)'%3E%3Cg transform='translate(0.389 3.382)'%3E%3Cpath class='c' d='M176.395,186.683H143.618v-3.648h-7.334v18.241h-7.3V186.683H97.408V175.659H205.584v-21.9H115.766V3.382h-7.3V168.361H97.4V3.382H90.1V168.361H68.7v-7.3H82.773v-7.3H61.405l-.568.024v14.575H53.6V153.771H46.3v14.593L7.684,168.4V153.81l-7.292-.042v21.888h.98v0H90.107v25.617h-7.28V186.683H60.9v14.593H53.6V186.683H31.725l-.006,14.593H7.693V186.683H.389v21.888H39.015V193.984h7.3v14.587H205.578V186.683H183.7v14.593h-7.307m-108.206,0V194h7.337v7.277Zm122.85-7.292h7.3v7.292h-7.3Zm-47.424,0h25.479v7.292H143.615Zm-21.969,0v7.292H97.405v-7.292Zm76.635-25.623H115.766v-7.3H198.28Z' transform='translate(-0.389 -3.382)'/%3E%3Crect class='d' width='7.337' height='5.758' transform='translate(67.707 174.911)'/%3E%3Cpath class='c' d='M60.812,109.587V127.93h49.307v-7.3H68.149l-.036-11.045H99.056v-7.28l-30.949-.018.006-69.412h-7.3v69.412H49.737V10.739h-7.3v98.848H60.812Z' transform='translate(84.007 11.384)'/%3E%3Cpath class='c' d='M71.658,10.739h-7.3v91.55l-11.072-.033L53.3,32.877H45.984v69.385l-30.843.027v7.3l30.843-.039L45.957,120.6l-41.891.009.018,7.319,41.861-.039h7.337V109.548l18.376.039v-.46' transform='translate(6.991 11.384)'/%3E%3Crect class='d' width='16.482' height='7.301' transform='translate(18.352 150.38)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  
+    height: 205px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .loader2::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='205.195' height='205.189' viewBox='0 0 205.195 205.189'%3E%3Cdefs%3E%3Cstyle%3E.a,.b%7Bfill:%23dbdbdb;%7D.a%7Bfill-rule:evenodd;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(-0.389 -3.382)'%3E%3Cg transform='translate(0.389 3.382)'%3E%3Cpath class='a' d='M176.395,186.683H143.618v-3.648h-7.334v18.241h-7.3V186.683H97.408V175.659H205.584v-21.9H115.766V3.382h-7.3V168.361H97.4V3.382H90.1V168.361H68.7v-7.3H82.773v-7.3H61.405l-.568.024v14.575H53.6V153.771H46.3v14.593L7.684,168.4V153.81l-7.292-.042v21.888h.98v0H90.107v25.617h-7.28V186.683H60.9v14.593H53.6V186.683H31.725l-.006,14.593H7.693V186.683H.389v21.888H39.015V193.984h7.3v14.587H205.578V186.683H183.7v14.593h-7.307m-108.206,0V194h7.337v7.277Zm122.85-7.292h7.3v7.292h-7.3Zm-47.424,0h25.479v7.292H143.615Zm-21.969,0v7.292H97.405v-7.292Zm76.635-25.623H115.766v-7.3H198.28Z' transform='translate(-0.389 -3.382)'/%3E%3Crect class='b' width='7.337' height='5.758' transform='translate(67.707 174.911)'/%3E%3Cpath class='a' d='M60.812,109.587V127.93h49.307v-7.3H68.149l-.036-11.045H99.056v-7.28l-30.949-.018.006-69.412h-7.3v69.412H49.737V10.739h-7.3v98.848H60.812Z' transform='translate(84.007 11.384)'/%3E%3Cpath class='a' d='M71.658,10.739h-7.3v91.55l-11.072-.033L53.3,32.877H45.984v69.385l-30.843.027v7.3l30.843-.039L45.957,120.6l-41.891.009.018,7.319,41.861-.039h7.337V109.548l18.376.039v-.46' transform='translate(6.991 11.384)'/%3E%3Crect class='b' width='16.482' height='7.301' transform='translate(18.352 150.38)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    top: 2px;
+    animation: loader 4s linear infinite;
+  }
+  
+  @keyframes loader {
+    0% {
+      height: 205px;
+    }
+    50% {
+      height: 0;
+    }
+    75% {
+      height: 205px;
+    }
+    100% {
+      height: 0;
+    }
+  }
+  

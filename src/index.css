@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  overflow-x: hidden;
+}
+
+.carousel-image img {
+  min-width: 100%;
+  height: 100%;
+}
+.slick-track {
+  height: 100vh;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0px;
+  z-index: 10000;
+  background: black;
+  opacity: 0.5;
+}
+.slick-dots li {
+  width: 50px;
+}
+
+.slick-dots li button {
+  width: 50px !important;
+  color: #fff;
+}
+
+.slick-dots li button::before {
+  content: "";
+  width: 50px !important;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 8px;
+  margin: 0 20px;
+  opacity: 0.4;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+}
+.slick-active li button::before {
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .slick-track {
+    max-height: 600px;
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
